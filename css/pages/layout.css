@@ -1,0 +1,338 @@
+body {font-family: 'NanumGothic';}
+
+#headerBtn {
+	display: none;
+}
+#wrap {
+}
+#header {
+	position:fixed; 
+	top:0; left:0; 
+	width:20%;
+	height:100%;
+	background:#222629;
+	color:#fff; 
+}
+#header .name { 
+	text-align:right;
+	margin:50px 30px;	
+}
+#header .name h1 {
+	font-size: 25px;
+	margin-bottom:5px;
+}
+#header .name p {
+	color:#c1c1c1;
+}
+
+#header nav ul { 
+	text-align:right;
+	margin-bottom:30px;
+}
+#header nav ul li { }
+#header nav ul li a { 
+	display:block;
+	width:100%;
+	padding-right:30px;
+	height:60px;
+	line-height:60px;
+	box-sizing:border-box;
+	color:#c1c1c1;
+	font-size:15px;
+}
+#header nav ul li a:hover , #header nav ul li.on a {
+	background:#1e2124;
+	color:#fff;
+}
+
+#header .contact {
+	text-align:right;
+	width:100%;
+	position:absolute;
+	bottom:30px; right:30px;
+}
+#header .contact dt {
+	font-size: 13px;
+	margin-bottom:5px;
+}
+#header .contact dd , #header .contact dd a{
+	font-size:11px;
+	color:#9a9a9a;
+	line-height:20px;
+}
+
+#contents {
+	margin-left:20%;
+}
+#intro {
+	position:relative; 
+	top:0; left:0;
+	height:750px;
+	background:url(http://html5up.net/uploads/demos/prologue/images/banner.jpg) 50% 50% no-repeat;
+}
+#intro > div {
+	position:absolute;
+	top:50%;
+	width:100%;
+	margin-top:-50px;
+	color:rgba(255,255,255, 0.8);
+	text-align:center;
+}
+#intro > div h2 {
+	font-size:40px;
+	margin-bottom:20px;
+}
+#intro > div p {
+	font-size:25px;
+}
+
+#portfolio {
+	height:1300px;
+	padding:30px;
+}
+#portfolio h2 , #about h2 {
+	font-size: 30px;
+	color:#acacac;
+	text-align: center;
+	font-weight: normal;
+	margin-bottom:40px;
+}
+.listStyle {
+	overflow:hidden;
+}
+
+.listStyle li {
+	width:23%;
+	float:left;
+	margin:0 1% 40px;
+	position: relative;
+	top:0; left:0;
+	
+}
+
+.listStyle li img {
+	width:100%; 
+}
+
+.listStyle li .layer{
+	opacity:0;
+	position: absolute;
+	top:0; left:0;
+	width:100%;
+	height:100%;
+	color:rgb(255,255,255);
+	background:rgba(0,0,0,0.7);
+	text-align: center;
+	transition: all 0.5s;
+	-ms-transition : all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+.listStyle li .layer span {
+	display:block;
+	font-size:16px;
+	padding-top:25%;
+}
+
+.listStyle li:hover .layer{
+	opacity:1;
+	transition: all 0.5s;
+	-ms-transition : all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+.lt-ie9 .listStyle li .layer {
+	display:none;
+	background:rgb(0,0,0);
+	filter: alpha(opacity=80);
+}
+.lt-ie9 .listStyle li:hover .layer{
+	display:block;
+}
+
+#about {
+	height:700px;
+	padding:30px;
+}
+
+
+
+/* 데스크탑 전용 */
+@media screen and (min-width:961px) {
+	.d_hidden {
+		display:none;
+	}
+}
+
+
+/* 태블릿 & 모바일 공통 */
+@media screen and (max-width:960px) {
+	
+	.tm_hidden { display:none !important; }
+	
+	body { overflow-x:hidden;}
+	
+	#headerBtn {
+		display: block;
+		position: fixed;
+		top:10px; left:10px;
+		z-index:9999;
+		background:rgba(128,128,128,0.5);
+		border: none;
+		width: 45px;
+		height: 45px;
+		text-indent: -900em;
+		overflow: hidden;
+		cursor: pointer;
+		outline: none;
+		transition: all 0.5s;
+		-ms-transition : all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+	}
+	#headerBtn:before {
+		content: '';
+		position: absolute;
+		width: 25px;
+		height: 3px;
+		background: #fff;
+		top: 13px;
+		left: 10px;
+		transition: all 0.5s;
+		-ms-transition : all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+	}
+	#headerBtn:after {
+		content: '';
+		position: absolute;
+		width: 25px;
+		height: 3px;
+		background: #fff;
+		top: 21px;
+		left: 10px;
+		box-shadow: 0 8px 0 #fff;
+		transition: all 0.5s;
+		-ms-transition : all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+	}
+	.header-open #headerBtn {
+		transform: translateX(275px);
+		-moz-transform: translateX(275px);
+		-webkit-transform: translateX(275px);
+		-ms-transform: translateX(275px);
+		transition: all 0.5s;
+		-ms-transition : all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+	}
+	.header-open #headerBtn:before {
+		content: '';
+		position: absolute;
+		width: 25px;
+		height: 3px;
+		background: #fff;
+		top: 22px;
+		left: 10px;
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+		transition: all 0.5s;
+		-ms-transition : all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+	}
+	.header-open #headerBtn:after {
+		content: '';
+		position: absolute;
+		width: 25px;
+		height: 3px;
+		background: #fff;
+		top: 22px;
+		left: 10px;
+		box-shadow:none;
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		transition: all 0.5s;
+		-ms-transition : all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+	}
+	#header {
+		position:fixed; 
+		top:0; left:0; 
+		width: 275px;
+		margin-left: -275px;
+		transition: all 0.5s;
+		-ms-transition : all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+	}
+	.header-open #header {
+		margin-left: 0;
+		transform: translateX(0); 
+		-ms-transform: translateX(0); 
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		transition: all 0.5s;
+		-ms-transition : all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+	}
+	#contents {
+		margin-left: 0px;
+		transition: all 0.5s;
+		-ms-transition : all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+	}
+	.header-open #contents {
+		transform: translateX(275px);
+		-moz-transform: translateX(275px);
+		-webkit-transform: translateX(275px);
+		-ms-transform: translateX(275px);
+		transition: all 0.5s;
+		-ms-transition : all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		backface-visibility:hidden
+	}
+	#portfolio {
+		height:auto;
+	}
+	#intro {  }
+	#intro > div {
+		position:absolute;
+		top:45%;
+		width:100%;
+	}
+
+	.listStyle li {
+		width:46%;
+		float:left;
+		margin:0 2% 40px;
+	}
+
+	.listStyle li img {
+		width:100%; 
+	}
+
+}
+
+/* 태블릿 */
+@media screen and (min-width:768px) and (max-width:960px) {
+
+	.t_hidden {display:none !important;}
+
+}
+
+/* 모바일 */
+@media screen and (max-width:480px) {
+
+	.m_hidden {display:none !important;}
+
+}
