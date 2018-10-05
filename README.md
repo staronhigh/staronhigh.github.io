@@ -1,7 +1,7 @@
 # Portfolio
 
 ## My info
-Publisher, 2013~now
+Web Publisher, 2013~now
 
 ## Works
 ### 2013 ~ 2015 Styleship
