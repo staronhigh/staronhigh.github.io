@@ -12,4 +12,4 @@ Web Publisher, 2013~now
 5. 작업물
 6. 수정
 
-### 2015 ~ 2018 Netive
+### 2015 ~ 2019 Netive
