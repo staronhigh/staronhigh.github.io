@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+/*
+    2019 brand 개편
+    300 - light
+    400 - regular
+    500 - medium
+    700 - bold
+*/
+
+/* 로컬 폰트 임시 추가 */
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 300;
+	src: url(/_ui/responsive/theme-blue//fonts/notokr-light.woff2) format('woff2'),
+		 url(/_ui/responsive/theme-blue//fonts/notokr-light.woff) format('woff') ;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 400;
+	src: url(/_ui/responsive/theme-blue//fonts/notokr-regular.woff2) format('woff2'),
+		 url(/_ui/responsive/theme-blue//fonts/notokr-regular.woff) format('woff') ;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 500;
+	src: url(/_ui/responsive/theme-blue//fonts/notokr-medium.woff2) format('woff2'),
+		 url(/_ui/responsive/theme-blue//fonts/notokr-medium.woff) format('woff') ;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 700;
+	src: url(/_ui/responsive/theme-blue//fonts/notokr-bold.woff2) format('woff2'),
+		 url(/_ui/responsive/theme-blue//fonts/notokr-bold.woff) format('woff') ;
+}
+
+
+/* common - layout */
+.newHome { padding-bottom: 50px; }
+.nColWrap { display:-webkit-flex; display: flex; margin-top: 10px; }
+.nColWrap .nColItem { position: relative; width: 100%; margin-left: 10px; text-align: center; background-color: #f9f9fa; }
+.nColWrap .nColItem:first-child { margin-left: 0; }
+.nColWrap .nColItem .nBtn { margin-top: 15px; }
+.nColWrap .nColItem p + .nBtn { margin-top: 15px;}
+
+/* common - txt style */
+.newHome,
+.newHome h1 { font-family: 'Noto Sans KR', sans-serif; font-weight: normal; font-weight: 500; letter-spacing: -0.1em; word-spacing: -0.05em; }
+.nColWrap p { font-size: 18px; font-weight: 400; line-height: 26px; color: rgba(56,56,56,0.8); }
+.nColWrap .nColItem.nWhite * { color: #fff; }
+.nColWrap .nColItem.nWhite p,
+.nColWrap .nColItem.nWhite p * { color: rgba(255,255,255,0.8) }
+.nColWrap .nColItem.nBlack * { color: #383838; }
+.nColWrap .nColItem.nBlack p,
+.nColWrap .nColItem.nBlack p * { color: rgba(56,56,56,0.8); }
+.nColWrap.nTxt h1 { margin-top: 56px; font-size: 32px; line-height: 40px; }
+.nColWrap.nTxt h1 em { display: block; margin-bottom: 13px; font-size: 18px;  line-height: 1; font-style: normal; font-weight: 500; text-transform: uppercase; letter-spacing: 1.6px !important;}
+.nColWrap.nTxt h1 sup { top: -0.6em; font-size: 0.6em; }
+.nColWrap.nTxt p { margin-top: 10px; font-size: 16px; line-height: 24px; }
+.nColWrap.nTxt p span { border-bottom: 1px solid; }
+.nColWrap.nTxt .nNote { font-size: 12px; font-style: italic; color: rgba(56,56,56,0.6); line-height: 18px; letter-spacing: 0; font-weight: 300;}
+.nColWrap.nTxt .nColItem.nWhite .nNote { color: rgba(255,255,255,0.6) }
+.nColWrap.nTxt2 h1 { font-size: 22px; }
+.nColWrap.nTxt2 p { margin: 4px 0 0; font-size: 16px; line-height: 24px; }
+
+/* common - button */
+.newHome .nBtn { display: inline-block; width: 92px; padding: 4px 19px; margin-bottom: 40px; font-size: 14px; font-weight: 500; border: 1px solid; color: #383838;}
+
+/* visual */
+.nVisual { height: 500px; padding-right: 50%; text-align: center; background-repeat: no-repeat; background-position: right 0; color: #383838; }
+.nVisual h1 { padding-top: 110px; font-size: 44px; line-height: 50px; color: #383838; }
+.nVisual h1 em { display: block; margin:0 auto 25px; font-size: 0; line-height: 0; color: transparent; letter-spacing: 0 !important;  }
+.nVisual p { margin: 11px 0 0; font-size: 16px; line-height: 24px; font-weight: 400; }
+.nVisual .nBtn { margin-top: 26px; }
+.newHome .owl-carousel .owl-nav button.owl-prev,
+.newHome .owl-carousel .owl-nav button.owl-next { width: 34px; height: 65px; margin-top: -32px; background: url(/_ui/responsive/theme-blue/images/akl_brand_new/common/nIcon_arrow.png) no-repeat !important; background-size: auto 100%; }
+.newHome .owl-carousel .owl-nav button.owl-prev { left: 40px; }
+.newHome .owl-carousel .owl-nav button.owl-next { right: 40px; background-position: -34px 0  !important; }
+.newHome .owl-carousel .owl-nav button span { color: rgba(0,0,0,0) }
+.newHome .owl-carousel .owl-dots { right: auto; bottom: 85px; width: 100%; padding-right: 50%; text-align: center; line-height: 0; }
+.newHome .owl-carousel .owl-dots button.owl-dot { width: 8px; height: 8px; margin: 0 8px; background-color: #838a8e; border-radius: 50%; }
+.newHome .owl-carousel .owl-dots button.owl-dot.active { background-color: #fff }
+
+/* visual - 뉴트리라이트 */
+.nNutrilite .nVisual h1 em { width: 212px; height: 20px; background: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_logo.png) no-repeat; }
+.nNutrilite .nVisual.nItem01 { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_visual01.jpg); }
+.nNutrilite .nVisual.nItem02 { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_visual02.jpg); }
+.nNutrilite .nVisual.nItem03 { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_visual03.jpg); }
+
+/* 뉴트리라이트 역사, 농장, 과학 */
+.nNutrilite .nBgBrand { height: 595px; background: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_brand01.jpg) no-repeat center 0; }
+.nNutrilite .nBgBrand:nth-child(2) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_brand02.jpg); }
+.nNutrilite .nBgBrand:nth-child(3) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_brand03.jpg); }
+
+/* 뉴트리라이트 캠페인 */
+.nNutrilite .nBgCampaign { background: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_campaign01.jpg) no-repeat center 0; background-size: 100%; background-color: #f5f7f9;}
+.nNutrilite .nBgCampaign:nth-child(2) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_campaign02.jpg); }
+.nNutrilite .nBgCampaign h1 { padding-top: 54.5%; font-size: 24px; }
+.nNutrilite .nBgCampaign p { margin: 4px 0 0; }
+
+/* 뉴트리라이트 프로그램 (bg색상 들어간채로 이미지자름) */
+.nNutrilite .nBgProgram { background: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_program01.png) no-repeat center 0; background-size: 100%;  background-color: #f5f7f9;}
+.nNutrilite .nBgProgram:nth-child(2) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_program02.png); }
+.nNutrilite .nBgProgram:nth-child(3) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_program03.png); }
+.nNutrilite .nBgProgram:nth-child(4) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_program04.png); }
+.nNutrilite .nBgProgram h1 { padding-top: 105%; font-size: 22px; }
+.nNutrilite .nBgProgram p { margin: 6px 0 0;  }
+
+/* visual - 아티스트리 */
+.nArtistry .nVisual.nItem01 { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_visual01.jpg); }
+.nArtistry .nVisual.nItem02 { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_visual02.jpg); }
+.nArtistry .nVisual.nItem01 h1 em { width: 180px; height: 24px; background: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_logo01.png) no-repeat; }
+.nArtistry .nVisual.nItem02 h1 { padding-top: 92px; }
+.nArtistry .nVisual.nItem02 h1 em { width: 186px; height: 42px; margin-bottom: 15px; background: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_logo02.png) no-repeat; }
+
+/* 아티스트리 성분, 역사, 솔루션 */
+.nArtistry .nBgInfo { height: 595px; background: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_info01.jpg) no-repeat center 0; }
+.nArtistry .nBgInfo:nth-child(2) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_info02.jpg); }
+.nArtistry .nBgInfo:nth-child(3) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_info03.jpg); }
+.nArtistry .nBgInfo .nNote { position: absolute; bottom: 20px; width: 100%; margin: 0;}
+
+/* 아티스트리 영상 */
+.nArtistry .nPlayer { height: 540px; background:url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_movie.jpg) no-repeat 50% 0; }
+.nArtistry .video-preview { position:relative;margin:0;height: 540px;overflow:hidden;background-repeat:no-repeat;background-position:50% 50%;background-size:1376px auto;}
+
+/* 아티스트리 브랜드 */
+.nArtistry .nBgBrand { height: 595px; background: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_brand01.jpg) no-repeat center 0; }
+.nArtistry .nBgBrand:nth-child(2) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_brand02.jpg); }
+.nArtistry .nBgBrand:nth-child(3) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_brand03.jpg); }
+
+/* 아티스트리 캠페인 */
+.nArtistry .nBgCampaign { background: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_campaign01.jpg) no-repeat center 0; background-size: 100%; background-color: #f5f7f9;}
+.nArtistry .nBgCampaign:nth-child(2) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_campaign02.jpg); }
+.nArtistry .nBgCampaign h1 { margin-top: 0; padding-top: 52.5%; }
+
+/* common - 체험 */
+.nColWrap .nBgExperience { margin-left: 12px; padding-bottom: 86px; }
+.nColWrap .nBgExperience h1 { padding-top: 65%; }
+.nColWrap .nBgExperience .nBtn { position: absolute; bottom: 40px; left: 50%; margin-left: -46px; margin-bottom: 0; }
+
+/* 뉴트리라이트 체험 */
+.nNutrilite .nBgExperience { background: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_Experience01.jpg) no-repeat center 0; background-size: 100%; background-color: #f5f7f9; }
+.nNutrilite .nBgExperience:nth-child(2) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_Experience02.jpg); }
+.nNutrilite .nBgExperience:nth-child(3) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_Experience03.jpg); }
+
+/* 아티스트리 체험 */
+.nArtistry .nBgExperience { background: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_Experience01.jpg) no-repeat center 0; background-size: 100%; background-color: #f5f7f9; }
+.nArtistry .nBgExperience:nth-child(2) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_Experience02.jpg); }
+.nArtistry .nBgExperience:nth-child(3) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_Experience03.jpg); }
+
+@media (max-width:1399px){
+    .nNutrilite .nVisual { background-position: 60% 0; }
+    .nColWrap .nColItem p { font-size: 16px; }
+    .nColWrap .nBgProgram h1,
+    .nColWrap .nBgExperience h1 { font-size: 18px; }
+}
+@media (max-width:1023px){
+    .nNutrilite .nVisual { background-position: 60% 0; }
+    .nArtistry .nVisual { background-position: 70% 0; }
+    .nColWrap.nCol4 .nColItem { padding: 0 10px; }
+    .nColWrap.nCol4 .nColItem br { display: none; }
+    .nColWrap .nBgInfo .nInner,
+    .nColWrap .nBgBrand .nInner { padding: 0 5px; }
+}
+@media (max-width:768px){
+    .mHidden { display:none; }
+    .nColWrap { display: block; margin-top: 0; }
+    .nColWrap.nCol2-2,
+    .nColWrap.nCol4-2 { display:-webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; margin-left:-5px;}
+    .nColWrap.nCol4-2 { margin-top: 0; }
+    .nColWrap.nCol2-2 .nColItem { width: calc(50% - 5px); margin-left: 5px; }
+    .nColWrap.nCol4-2 .nColItem { width: calc(50% - 5px); margin-left: 5px; }
+    .nColWrap .nColItem { margin-left: 0;  margin-top: 5px; }
+    .nColWrap .nColItem .nBtn,
+    .nColWrap .nColItem p + .nBtn { margin-top: 10px;}
+    .nColWrap .nColItem p { font-size: 14px; line-height: 1.4; }
+    .nColWrap.nTxt h1 { margin-top: 0; font-size: 19px; line-height: 22px;}
+    .nColWrap.nTxt h1 em { margin-bottom: 10px; font-size: 12px;}
+    .nColWrap.nTxt p { font-size: 16px; line-height: 24px; }
+    .nColWrap.nTxt2 h1 { font-size: 15px; }
+    .nColWrap.nTxt2 p { margin: 5px 0 0; font-size: 13px; line-height: 16px; }
+    .nColWrap.nTxt .nNote { font-size: 11px; line-height:14px; }
+    
+    .newHome .nBtn { width: auto; min-width: 55px; margin-bottom: 20px; padding: 2px 10px; font-size: 10px; }
+
+    .newHome .owl-carousel { padding: 0; }
+    .nVisual { height: 409px; padding-right: 0; background-size: cover; }
+    .nVisual h1 { padding-top: 45px; font-size: 27px; line-height: 32px; }
+    .nVisual h1 em { margin-bottom: 15px; }
+    .nVisual p { margin-top: 8px; font-size: 13px; line-height: 18px; }
+    .nVisual .nBtn { font-size: 14px; padding:2px 22px; margin: 12px 0 0; }
+    .newHome .owl-carousel .owl-nav button.owl-prev,
+    .newHome .owl-carousel .owl-nav button.owl-next { width: 17px; height: 33px; margin-top: -17px; background-size: 34px !important; }
+    .newHome .owl-carousel .owl-nav button.owl-prev { left: 5px; }
+    .newHome .owl-carousel .owl-nav button.owl-next { right: 5px; background-position: -17px 0 !important; }
+    .newHome .owl-carousel .owl-nav button span { color: rgba(0,0,0,0) }
+    .newHome .owl-carousel .owl-dots { bottom: 20px; padding-right: 0; }
+
+    /* 뉴트리라이트 */
+    .nNutrilite .nVisual h1 em { width: 148px; height: 13px; background: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_logo_m.png); background-size: 148px; }
+    .nNutrilite .nVisual.nItem01 { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_visual01_m.jpg); }
+    .nNutrilite .nVisual.nItem01:before { content: ''; display: block; width: 100%; height: 205px; position: absolute; bottom: 0; background: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_visual01_inner_m.png) 50% 0 no-repeat; background-size: 375px; z-index:0;}
+    .nNutrilite .nVisual.nItem02 { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_visual02_m.jpg); background-size: auto 100%; background-position: 50% 100%; background-color: #d3ead3;}
+    .nNutrilite .nVisual.nItem03 { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_visual03_m.jpg); background-position: 50% 100%;}
+    
+    .nNutrilite .nBgBrand { display: table; height: 193px; padding-right: 50%; background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_brand01_m.jpg); background-size: cover; }
+    .nNutrilite .nBgBrand:nth-child(2) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_brand02_m.jpg); }
+    .nNutrilite .nBgBrand:nth-child(3) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/nutrilite/nbg_brand03_m.jpg); }
+    .nNutrilite .nBgBrand .nInner { display: table-cell; vertical-align: middle; }
+    .nNutrilite .nBgBrand .nInner .nBtn { margin: 10px 0 0;}
+
+    .nNutrilite .nBgCampaign h1 { padding: 58% 5px 0; font-size: 13px; }
+    .nNutrilite .nBgCampaign p { margin: 4px 0 0; padding: 0 5px; font-size: 11px; line-height: 14px; }
+
+    .nNutrilite .nBgProgram { background-size: 155px; }
+    .nNutrilite .nBgProgram h1 {  padding: 165px 5px 0; font-size: 13px; }
+    .nNutrilite .nBgProgram p {  padding: 0 5px; font-size: 11px; line-height: 14px; }
+
+    /* 아티스트리 */
+    .nArtistry .nVisual.nItem01 { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_visual01_m.jpg); background-position: 50% 100%; }
+    .nArtistry .nVisual.nItem02 { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_visual02_m.jpg); background-position: 50% 100%; }
+    .nArtistry .nVisual.nItem01 h1 em { width: 112px; height: 15px; background: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_logo01_m.png) no-repeat; background-size: 112px;}
+    .nArtistry .nVisual.nItem02 h1 { padding-top: 45px;}
+    .nArtistry .nVisual.nItem02 h1 em { width: 110px; height: 26px; margin-bottom: 15px; background: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_logo02.png) no-repeat; background-size: 110px;}
+
+    .nArtistry .nBgInfo { height: 293px; text-align: left; background: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_info01_m.jpg) no-repeat 100% 20%; background-size:100%; }
+    .nArtistry .nBgInfo .nInner { width:60%; padding: 40px 0 0 30px }
+    .nArtistry .nBgInfo:nth-child(2) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_info02_m.jpg); }
+    .nArtistry .nBgInfo:nth-child(3) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_info03_m.jpg); }
+    .nArtistry .nBgInfo p { font-size:13px; line-height:18px; }
+    .nArtistry .nBgInfo .nNote { bottom: 25px; width: auto; font-size: 11px; line-height:14px; }
+        
+    .nArtistry .nPlayer { height: 192px; background:url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_movie_m.jpg) 50% 0 no-repeat; background-size:auto 100%; background-color: #000; }
+    .nArtistry .video-preview { height: 100%;}
+
+    .nArtistry .nBgBrand { display: table; height: 193px; text-align: left;  background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_brand01_m.jpg); background-position:100% 50%; background-size: cover; }
+    .nArtistry .nBgBrand:nth-child(2) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_brand02_m.jpg); }
+    .nArtistry .nBgBrand:nth-child(3) { background-image: url(/_ui/responsive/theme-blue/images/akl_brand_new/artistry/nbg_brand03_m.jpg); }
+    .nArtistry .nBgBrand .nInner { display: table-cell; vertical-align: middle; padding: 0 30px;  }
+    .nArtistry .nBgBrand .nInner .nBtn { margin: 13px 0 0;}
+
+    .nArtistry .nBgCampaign h1 { padding: 58% 5px 0; font-size: 15px; }
+
+    /* common - 체험 */
+    .nColWrap .nBgExperience { padding-bottom: 52px; }
+    .nColWrap .nBgExperience h1 { padding-top: 62%; }
+    .nColWrap .nBgExperience .nBtn { bottom: 20px; margin-left: -27px; margin-bottom: 0; }
+
+}
+
+@media (max-width:375px){ 
+    .nArtistry .nBgInfo { background-size:cover; }
+    .nArtistry .nBgInfo .nInner { width:76%;  }
+}
